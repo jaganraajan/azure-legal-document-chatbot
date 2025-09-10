@@ -1,0 +1,65 @@
+NON-DISCLOSURE AGREEMENT (NDA)
+
+This Non-Disclosure Agreement ("Agreement") is entered into on [Date] between [Disclosing Party], a [State/Country] entity ("Disclosing Party"), and [Receiving Party], a [State/Country] entity ("Receiving Party").
+
+WHEREAS, the parties wish to explore a business relationship and may disclose confidential information to each other;
+
+NOW, THEREFORE, in consideration of the mutual covenants herein, the parties agree as follows:
+
+1. DEFINITION OF CONFIDENTIAL INFORMATION
+"Confidential Information" means any and all non-public, proprietary, or confidential information disclosed by either party, including but not limited to:
+- Technical data, trade secrets, know-how
+- Business plans, financial information
+- Customer lists and contact information
+- Marketing strategies and plans
+- Software, algorithms, and source code
+- Any other information marked or identified as confidential
+
+2. OBLIGATIONS OF RECEIVING PARTY
+Receiving Party agrees to:
+- Hold all Confidential Information in strict confidence
+- Not disclose Confidential Information to third parties without prior written consent
+- Use Confidential Information solely for evaluating potential business relationship
+- Protect Confidential Information with the same degree of care used for own confidential information
+- Not reverse engineer or attempt to derive the composition of Confidential Information
+
+3. EXCEPTIONS
+The obligations herein shall not apply to information that:
+- Is or becomes publicly available through no breach of this Agreement
+- Was rightfully known prior to disclosure
+- Is rightfully received from a third party without breach of confidentiality
+- Is required to be disclosed by law or court order
+
+4. RETURN OF MATERIALS
+Upon termination of discussions or upon request, Receiving Party shall promptly return or destroy all documents and materials containing Confidential Information.
+
+5. NO LICENSE
+No license or right to use Confidential Information is granted hereby. All rights remain with the Disclosing Party.
+
+6. TERM
+This Agreement shall remain in effect for [Duration] years from the date of execution, unless terminated earlier by mutual consent.
+
+7. REMEDIES
+Receiving Party acknowledges that breach of this Agreement may cause irreparable harm, and Disclosing Party shall be entitled to seek injunctive relief and monetary damages.
+
+8. GOVERNING LAW
+This Agreement shall be governed by the laws of [State/Country].
+
+9. ENTIRE AGREEMENT
+This Agreement constitutes the entire agreement between the parties concerning the subject matter hereof.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement on the date first written above.
+
+DISCLOSING PARTY:
+
+_____________________
+[Name]
+[Title]
+[Date]
+
+RECEIVING PARTY:
+
+_____________________
+[Name]
+[Title]
+[Date]

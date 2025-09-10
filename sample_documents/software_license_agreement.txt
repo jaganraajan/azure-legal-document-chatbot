@@ -1,0 +1,46 @@
+SOFTWARE LICENSE AGREEMENT
+
+This Software License Agreement ("Agreement") is entered into on [Date] by and between [Company Name], a [State/Country] corporation ("Licensor"), and [User/Company Name] ("Licensee").
+
+1. GRANT OF LICENSE
+Subject to the terms and conditions of this Agreement, Licensor hereby grants to Licensee a non-exclusive, non-transferable license to use the software product identified above ("Software").
+
+2. PERMITTED USES
+Licensee may:
+- Install and use the Software on a single computer
+- Make one backup copy of the Software for archival purposes
+- Use the Software in accordance with the documentation provided
+
+3. RESTRICTIONS
+Licensee may not:
+- Copy, modify, or create derivative works of the Software
+- Distribute, sell, lease, or sublicense the Software
+- Reverse engineer, decompile, or disassemble the Software
+- Remove any proprietary notices from the Software
+
+4. TERM AND TERMINATION
+This Agreement is effective until terminated. Licensee may terminate this Agreement at any time by destroying all copies of the Software. This Agreement will terminate immediately without notice if Licensee fails to comply with any provision of this Agreement.
+
+5. DISCLAIMER OF WARRANTIES
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. LICENSOR DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+6. LIMITATION OF LIABILITY
+IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OF THE SOFTWARE.
+
+7. GOVERNING LAW
+This Agreement shall be governed by and construed in accordance with the laws of [State/Country].
+
+8. ENTIRE AGREEMENT
+This Agreement constitutes the entire agreement between the parties and supersedes all prior agreements relating to the subject matter hereof.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.
+
+[Company Name]
+By: _____________________
+Name: [Name]
+Title: [Title]
+
+[User/Company Name]
+By: _____________________
+Name: [Name]
+Title: [Title]

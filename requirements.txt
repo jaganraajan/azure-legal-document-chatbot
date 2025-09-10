@@ -1,0 +1,12 @@
+# Azure SDK dependencies
+azure-storage-blob==12.17.0
+azure-search-documents==11.4.0
+azure-identity==1.13.0
+
+# Configuration and utilities
+python-dotenv==1.0.0
+typing-extensions==4.7.1
+
+# Optional: For document processing
+PyPDF2==3.0.1
+python-magic==0.4.27
