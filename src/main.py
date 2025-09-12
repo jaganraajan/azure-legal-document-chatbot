@@ -18,22 +18,35 @@ logger = logging.getLogger(__name__)
 
 class LegalDocumentChatbot:
     """Main class for the Legal Document Chatbot"""
-    
-    def __init__(self):
-        """Initialize the chatbot with Azure services"""
+
+    def __init__(self, storage=None, search_index=None):
+        """Initialize the chatbot with Azure services.
+
+        Dependency injection parameters allow using a mock storage (for
+        search-only development) or a pre-built search index instance.
+        """
         logger.info("Initializing Legal Document Chatbot...")
-        
-        # Validate configuration
-        if not config.validate_all_config():
+
+        # Always require search configuration (core capability)
+        if not config.validate_search_config():
             raise ValueError(
-                "Configuration validation failed. Please check your environment variables. "
-                "Copy .env.example to .env and fill in your Azure credentials."
+                "Azure Cognitive Search configuration missing. Set AZURE_SEARCH_SERVICE_ENDPOINT and AZURE_SEARCH_API_KEY."
             )
-        
-        # Initialize Azure services
-        self.storage = DocumentStorage()
-        self.search_index = DocumentSearchIndex()
-        
+
+        # Storage: either injected, real, or optional if mock provided
+        if storage is not None:
+            self.storage = storage
+        else:
+            if config.validate_storage_config():
+                self.storage = DocumentStorage()
+            else:
+                raise ValueError(
+                    "Azure Storage configuration missing. Provide environment vars OR pass a mock storage instance (e.g., MockDocumentStorage)."
+                )
+
+        # Search index: injected or created
+        self.search_index = search_index or DocumentSearchIndex()
+
         logger.info("Legal Document Chatbot initialized successfully!")
     
     def _generate_document_id(self, filename: str) -> str:

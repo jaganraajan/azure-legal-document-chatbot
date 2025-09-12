@@ -10,3 +10,5 @@ typing-extensions==4.7.1
 # Optional: For document processing
 PyPDF2==3.0.1
 python-magic==0.4.27
+
+praw
