@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reddit Thread Viewer</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>{{ thread.title }}</h1>
+      <div class="meta">Comments scraped: {{ thread.num_comments_scraped }} | <button id="refreshBtn">Refresh</button></div>
+    </header>
+    <section class="thread-body">
+      <pre>{{ thread.selftext }}</pre>
+    </section>
+    <section>
+      <h2>Comments</h2>
+      <div id="comments" class="comments-container">
+        {% for c in comments %}
+          <div class="comment" data-id="{{ c.id }}" style="margin-left: {{ (c.depth or 0) * 12 }}px">
+            <div class="comment-meta">
+              <span class="author">{{ c.author or 'anonymous' }}</span>
+              <span class="score">▲ {{ c.score }}</span>
+            </div>
+            <div class="comment-body">{{ c.body }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+  <script>
+    const refreshBtn = document.getElementById('refreshBtn');
+    refreshBtn.addEventListener('click', async () => {
+      refreshBtn.disabled = true; refreshBtn.textContent = 'Refreshing...';
+      try {
+        const res = await fetch('/api/comments');
+        const data = await res.json();
+        const container = document.getElementById('comments');
+        container.innerHTML = '';
+        data.comments.forEach(c => {
+          const div = document.createElement('div');
+          div.className = 'comment';
+          div.style.marginLeft = ((c.depth || 0) * 12) + 'px';
+          div.innerHTML = `<div class="comment-meta"><span class="author">${c.author || 'anonymous'}</span><span class="score">▲ ${c.score}</span></div><div class="comment-body"></div>`;
+          div.querySelector('.comment-body').textContent = c.body;
+          container.appendChild(div);
+        });
+        refreshBtn.textContent = 'Refresh';
+      } catch (e) {
+        alert('Failed to refresh comments: ' + e);
+        refreshBtn.textContent = 'Retry';
+      } finally { refreshBtn.disabled = false; }
+    });
+  </script>
+</body>
+</html>

@@ -49,7 +49,7 @@ def build_reddit_client():
 
 
 def flatten_comments(submission, max_comments: int | None = None) -> List[Dict[str, Any]]:
-    submission.comments.replace_more(limit=None)
+    # submission.comments.replace_more(limit=None)
     flat: List[Dict[str, Any]] = []
     for idx, c in enumerate(submission.comments.list()):
         if max_comments is not None and idx >= max_comments:
